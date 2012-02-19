@@ -6,15 +6,6 @@ gem 'rails', '3.2.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
-gem 'rake', '0.9.3.beta.1'
-group :development do
-  gem 'rspec-rails', '2.0.1'
-end
-group :test do
-  gem 'rspec', '2.0.1'
-  gem 'webrat', '0.7.1'
-end
-gem 'json'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -27,7 +18,13 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+group :development do
+  gem 'rspec-rails', '2.8.0'
+end
+group :test do
+  gem 'rspec', '2.8.0'
+  gem 'webrat', '0.7.1'
+end
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
